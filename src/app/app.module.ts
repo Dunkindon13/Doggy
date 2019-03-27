@@ -8,12 +8,16 @@ import { MainComponent } from './main/main.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { AboutComponent } from './about/about.component';
+import { RandomDogComponent } from './random-dog/random-dog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    AboutComponent,
+    RandomDogComponent
   ],
   imports: [
     BrowserModule,
