@@ -12,6 +12,7 @@ import { NotFoundComponent } from './views/not-found/not-found.component';
 import { AboutComponent } from './views/about/about.component';
 import { RandomDogComponent } from './views/random-dog/random-dog.component';
 import { DogAgePipe } from './controllers/dog-age.pipe';
+import { HomeComponent } from './views/home/home.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DogAgePipe } from './controllers/dog-age.pipe';
     NotFoundComponent,
     AboutComponent,
     RandomDogComponent,
-    DogAgePipe
+    DogAgePipe,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
