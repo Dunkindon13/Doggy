@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {DogService} from '../dog.service';
+import {DogService} from '../../models/dog.service';
 import {ActivatedRoute} from '@angular/router';
 
 @Component({
