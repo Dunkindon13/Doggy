@@ -3,11 +3,11 @@ import {Component, EventEmitter, OnInit} from '@angular/core';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.sass']
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
   count: number;
-  updated: EventEmitter<any> = new EventEmitter<any>();
+  updated: EventEmitter<null> = new EventEmitter<null>();
   output: string;
 
   constructor() {
@@ -20,4 +20,8 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  onClick(): void {
+    this.count++;
+    this.updated.emit();
+  }
 }
