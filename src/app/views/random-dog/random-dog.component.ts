@@ -10,6 +10,7 @@ import {ActivatedRoute} from '@angular/router';
 export class RandomDogComponent implements OnInit {
   dogUrl: string;
   dogName: string;
+  now: Date = new Date();
 
   constructor(private dogFetcher: DogService, private route: ActivatedRoute) {
     this.route.paramMap.subscribe(params => {
